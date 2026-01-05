@@ -1,0 +1,7 @@
+.modal-content .btn {
+  transition: transform 0.25s ease;
+}
+
+.modal-content .btn:hover {
+  transform: translateY(-3px);
+}

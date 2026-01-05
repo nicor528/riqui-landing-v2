@@ -1,0 +1,74 @@
+<svg
+  width="300"
+  height="300"
+  viewBox="0 0 300 300"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <!-- Máscara hexagonal -->
+    <mask id="hexMask">
+      <polygon
+        points="150,20 260,90 260,210 150,280 40,210 40,90"
+        fill="white"
+      />
+    </mask>
+
+    <!-- Gradiente azul oscuro -->
+    <radialGradient id="coreFill" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0a1a2f" />
+      <stop offset="100%" stop-color="#020812" />
+    </radialGradient>
+  </defs>
+
+  <!-- FASE 1: llenado central -->
+  <circle
+    cx="150"
+    cy="150"
+    r="0"
+    fill="url(#coreFill)"
+    mask="url(#hexMask)"
+  >
+    <animate
+      attributeName="r"
+      from="0"
+      to="160"
+      dur="0.8s"
+      fill="freeze"
+    />
+  </circle>
+
+  <!-- FASE 2: pistas (líneas simuladas) -->
+  <g
+    stroke="#ffb74d"
+    stroke-width="3"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0"
+  >
+    <polyline points="150,20 150,0">
+      <animate
+        attributeName="stroke-dashoffset"
+        from="100"
+        to="0"
+        dur="1.2s"
+        begin="0.8s"
+        fill="freeze"
+      />
+    </polyline>
+
+    <polyline points="260,90 290,70" />
+    <polyline points="260,210 290,230" />
+    <polyline points="150,280 150,300" />
+    <polyline points="40,210 10,230" />
+    <polyline points="40,90 10,70" />
+
+    <animate
+      attributeName="opacity"
+      from="0"
+      to="1"
+      dur="0.2s"
+      begin="0.8s"
+      fill="freeze"
+    />
+  </g>
+</svg>
