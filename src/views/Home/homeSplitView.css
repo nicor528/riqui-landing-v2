@@ -1,0 +1,110 @@
+/* Layout general */
+.home-split-view {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sección base */
+.split-section {
+  position: relative;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s ease;
+}
+
+/* Overlay oscuro sutil */
+.split-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 15, 25, 0.55);
+  transition: background 0.4s ease;
+  z-index: 1;
+}
+
+/* Contenido */
+.split-content {
+  position: relative;
+  z-index: 2;
+  max-width: 420px;
+  padding: 3rem;
+  text-align: left;
+}
+
+.split-section.right .split-content {
+  text-align: right;
+}
+
+/* Tipografía */
+.split-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.split-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.split-cta {
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+/* Hover */
+.split-section:hover {
+  transform: scale(1.03);
+}
+
+.split-section:hover .split-overlay {
+  background: rgba(10, 15, 25, 0.35);
+}
+
+/* CTA underline animado */
+.split-cta::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #ffb74d;
+  margin-top: 6px;
+  transition: width 0.4s ease;
+}
+
+.split-section:hover .split-cta::after {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .home-split-view {
+    flex-direction: column;
+  }
+
+  .split-section {
+    height: 50vh;
+  }
+
+  .split-content {
+    text-align: center !important;
+  }
+}
+
+@media (hover: hover) {
+  .split-section:hover {
+    transform: scale(1.03);
+  }
+}
