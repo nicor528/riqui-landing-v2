@@ -3,7 +3,6 @@ import React from "react";
 import Hero from "components/landing/Hero";
 import HowIHelp from "components/landing/HowIHelp";
 import ConsultingOffer from "components/landing/ConsultingOffer";
-import ImplementationOffer from "components/landing/ImplementationOffer";
 import AutomationBots from "components/landing/AutomationBots";
 import Education from "components/landing/Education";
 import FinalCTA from "components/landing/FinalCTA";
@@ -19,8 +18,6 @@ export default function LandingPage2() {
       <LandingPageHeader/>
       <HowIHelp />
       <ConsultingOffer />
-      <ImplementationOffer />
-      <AutomationBots />
       <Education />
       <FinalCTA />
       <RiquiFooter />

@@ -1,5 +1,22 @@
 // src/content/landingContent.js
 
+export const automationHeroContent = {
+  es: {
+    title: "Automatización inteligente para escalar sin fricción",
+    subtitle:
+      "Diseño e implemento sistemas y automatizaciones que reducen trabajo manual, optimizan procesos y permiten que tu negocio crezca sin sumar complejidad.",
+    primaryCTA: "Analicemos qué procesos automatizar",
+    secondaryCTA: "Ver cómo funciona",
+  },
+  en: {
+    title: "Smart automation to scale without friction",
+    subtitle:
+      "I design and implement systems and automations that reduce manual work, optimize processes, and allow your business to grow without added complexity.",
+    primaryCTA: "Let’s analyze which processes to automate",
+    secondaryCTA: "See how it works",
+  },
+};
+
 export const heroContent = {
   es: {
     title: "Claridad técnica para avanzar sin perder tiempo",
