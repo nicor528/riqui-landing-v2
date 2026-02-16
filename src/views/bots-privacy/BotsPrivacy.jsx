@@ -9,7 +9,7 @@ export default function BotsPrivacy() {
       <section>
         <h2>1. Responsable del tratamiento</h2>
         <p>
-          Nicolás Agustín Riquelme Silva – CUIT 20-40256179-4<br />
+          Riquitech – CUIT 20-40256179-4<br />
           Domicilio legal: Federico Lacroze 1868 4A, Ciudad Autónoma de Buenos Aires, Argentina<br />
           Email: nicolasriquelme528@gmail.com
         </p>
