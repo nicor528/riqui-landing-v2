@@ -4,7 +4,7 @@ export default function BotTerms() {
   return (
     <div style={styles.container}>
       <h1>Términos y Condiciones – Riquibots</h1>
-      <p><strong>Última actualización:</strong> [COMPLETAR FECHA]</p>
+      <p><strong>Última actualización:</strong> Domingo 15 de Febrero del año 2026</p>
 
       <section>
         <h2>1. Naturaleza del servicio</h2>

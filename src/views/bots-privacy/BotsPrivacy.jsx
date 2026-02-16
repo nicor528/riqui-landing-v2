@@ -4,7 +4,7 @@ export default function BotsPrivacy() {
   return (
     <div style={styles.container}>
       <h1>Política de Privacidad – Riquibots</h1>
-      <p><strong>Última actualización:</strong> [COMPLETAR FECHA]</p>
+      <p><strong>Última actualización:</strong>  Domingo 15 de Febrero del año 2026</p>
 
       <section>
         <h2>1. Responsable del tratamiento</h2>
